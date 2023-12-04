@@ -1,0 +1,135 @@
+:root {
+  /*Basic colors*/
+  --color-background: #f5f5f5;
+  --color-error: #76154c;
+  --color-lightest-gray: #f2f2f2;
+  --color-lightish: #bfbfbf;
+  --color-ok: #76b500;
+  --color-process: #f4af01;
+
+  --color-white: #ffffff;
+  --color-normal-gray: #9c9da6;
+  --color-medium-gray: #b9bac0;
+  --color-black: #000000;
+  --color-medium-black: #222222;
+  --color-highlight: #f40009;
+  --color-dark-orange: #f48700;
+  --color-light-gray: #eaeaea;
+  --color-light-gray2: #cdced2;
+  --color-davy-gray: #555555;
+  --color-monsoon-gray: #888888;
+  --color-iron-gray: #ced4da;
+  --color-warm-gray: #9a8d84;
+  --color-faded-red: #dc3545;
+  --color-pinkish-red: #a8113e;
+  --color-porcelain: #f1f2f8;
+  --color-dull-green: #74aa50;
+  --color-snow-drift: #f9f9f9;
+  --color-deep-violet: #4e0d45;
+  --color-athens-gray: #f4f5f8;
+
+  --color-primary: #40b883;
+  --color-primary-dark: #3baa7a;
+
+  /*Buttons*/
+  --button-radius: 16px;
+
+  --margin-base: 8px;
+
+  /*Text*/
+  --text-small: 10px;
+  --text-label: 12px;
+  --text-normal: 14px;
+  --text-medium: 16px;
+  --text-heading: 24px;
+}
+
+@font-face {
+  font-family: "Uniform";
+  src: url("../fonts/Uniform-Light.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Uniform";
+  src: url("../fonts/Uniform.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Uniform";
+  src: url("../fonts/Uniform-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Uniform";
+  src: url("../fonts/Uniform-Bold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+* {
+  font-family: "Uniform", sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--color-background);
+}
+
+.btn {
+  padding: 10px 12px;
+  border-radius: 4px;
+  outline: none;
+  border: none;
+  font-size: var(--text-medium);
+  cursor: pointer;
+
+  &-default {
+    background-color: var(--color-light-gray);
+
+    &:hover {
+      background-color: var(--color-light-gray2);
+    }
+  }
+
+  &-primary {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+
+    &:hover {
+      background-color: var(--color-primary-dark);
+    }
+  }
+}
+
+fieldset {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 6px;
+  font-size: var(--text-normal);
+}
+
+input {
+  border-radius: 4px;
+  outline: none;
+  padding: 10px;
+  border: 1px solid var(--color-light-gray);
+  margin-bottom: 10px;
+
+  &:focus {
+    border: 1px solid var(--color-medium-gray);
+  }
+}
+
+.wrapper {
+  width: 80%;
+  margin: 0px auto;
+}
